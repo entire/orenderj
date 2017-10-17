@@ -7,6 +7,7 @@ app.get('/', function (req, res) {
   res.status(200).sendFile(__dirname + '/public/joe.jpg')
 })
 
-app.listen(3000, function () {
+// Start Server
+app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port 3000!')
 })
