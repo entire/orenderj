@@ -4,7 +4,7 @@ const app = express()
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function (req, res) {
-  res.status(200).sendFile(__dirname + '/public/joe.jpg')
+  res.status(200).sendFile(__dirname + '/public/joe-with-scooter.jpg')
 })
 
 // Start Server
